@@ -1,0 +1,36 @@
+---
+title: "About"
+---
+About Me 
+
+My name is Fabián Cruz-Ruiz, I'm a first-generation Business Analytics master's student at the University of California, Irvine! My studies have allowed me to learn new skills related to machine learning, predictive analytics, statistics, and a wide range of programming lanaguges. Outside of school, I enjoy baking, trying new cafes, etc...
+
+
+
+
+```{python}
+
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+# Random data
+x = ['A', 'B', 'C', 'D', 'E']
+y = np.random.randint(1, 10, size=5)
+
+# Random colors for each bar
+colors = [random.choice(['#FF6347', '#6A5ACD', '#32CD32', '#FFD700', '#FF1493']) for _ in range(len(x))]
+
+# Plot the graph
+plt.bar(x, y, color=colors)
+
+# Labels and title
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Random Data Bar Graph')
+
+# Show the plot
+plt.show()
+
+
+```
